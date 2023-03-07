@@ -1,8 +1,8 @@
 {
-  "name": " ",
+  "name": "arm-launcher",
   "version": "0.0.1",
   "description": "",
-  "keywords": "",
+  "keywords": ["arm", "kinetic"],
   "license": "",
   "author": "",
   "scripts": {
