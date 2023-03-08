@@ -298,3 +298,7 @@ textarea {
     opacity: 0;
   }
 }
+
+#arm-js-app-container {
+  display: none!important;
+}
