@@ -1,6 +1,6 @@
 // Share app functions
 window.PbsArmLauncherAppUtil = (function (axios) {
-  const ARM_BASE_URL = 'https://qa-test.epicorarm.com';
+  const ARM_BASE_URL = 'https://abc.com';
   let kineticBaseUrl = '';
   let currentUserName = '';
   let currentCompany = '';

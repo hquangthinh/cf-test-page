@@ -5,7 +5,7 @@ window.PbsArmLauncherAppRedirect = (function ($, appUtil) {
     'ARMReqTracker': '/requisitions',
     'ARMReqEntry': '/requisitions/new_requisition'
   };
-  $(document).ready(function () {
+  $(window.parent.document).ready(function () {
     // setup event handlers
     //console.log(`ARMLauncher is ready`);console.log(appUtil);
     const jsAppContainer = window.parent.document.getElementById("arm-js-app-container");
