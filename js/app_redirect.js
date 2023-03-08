@@ -5,7 +5,7 @@ window.PbsArmLauncherAppRedirect = (function ($, appUtil) {
     'ARMReqTracker': '/requisitions',
     'ARMReqEntry': '/requisitions/new_requisition'
   };
-  //$(window.parent.document).ready(function () {
+  $(document).ready(function () {
     // setup event handlers
     //console.log(`ARMLauncher is ready`);console.log(appUtil);
     const jsAppContainer = window.parent.document.getElementById("arm-js-app-container");
@@ -24,7 +24,7 @@ window.PbsArmLauncherAppRedirect = (function ($, appUtil) {
           // Doing redirect to ARM
           if (armBaseUrl && armBaseUrl !== '') {
             //console.log('redirecting to'); console.log(armBaseUrl); console.log(window.parent.location);
-            if(window.parent.location.href.indexOf('Erp.UI.ARMReqEntry') > -1) {
+            if (window.parent.location.href.indexOf('Erp.UI.ARMReqEntry') > -1) {
               const returnUrl = encodeURIComponent(ARM_RETURN_URL_MAP['ARMReqEntry']);
               window.parent.location.href = `${armBaseUrl}/AppAccount/SSOHandler?provider=epicor&returnUrl=${returnUrl}`;
             }
@@ -34,5 +34,5 @@ window.PbsArmLauncherAppRedirect = (function ($, appUtil) {
       .catch(function (error) {
         console.log(`error.message`); console.log(error.message);
       });
-  //});
+  });
 }($, window.PbsArmLauncherAppUtil));
